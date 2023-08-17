@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Count Days</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="calculate_days">Days Between two Date</string>
+    <string name="rem_days">Next Date</string>
+
+    <string name="enter">Enter Your Date: </string>
+
+    <string name="after_day">Number of Days: </string>
+    <string name="after_week">Number of Weeks: </string>
+    <string name="after_month">Number of Months: </string>
+    <string name="after_year">Number of Years: </string>
+
+    <string name="hint_day">Num Of Days</string>
+    <string name="hint_week">Num Of Weeks</string>
+    <string name="hint_month">Number of Months</string>
+    <string name="hint_year">Number of Years</string>
+
+    <string name="submit">Submit</string>
+    <string name="your_date">Your Date</string>
+    <string name="calendar">Calendar</string>
+    <string name="share">Share</string>
+
+
+</resources>

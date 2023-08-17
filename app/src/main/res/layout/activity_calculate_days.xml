@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_color"
+    android:layout_height="match_parent"
+    tools:context=".CalculateDays">
+
+    <TextView
+        android:id="@+id/tv_enter_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/enter"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_date_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_first_date"
+        android:layout_width="@dimen/width_date"
+        android:layout_height="@dimen/height_date"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/et_shape"
+        android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5sp"
+        android:padding="@dimen/text_size"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:textStyle="normal"
+        android:autofillHints="date"
+        app:layout_constraintEnd_toEndOf="@id/tv_enter_first"
+        app:layout_constraintStart_toStartOf="@id/tv_enter_first"
+        app:layout_constraintTop_toBottomOf="@id/tv_enter_first"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/tv_enter_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:textSize="@dimen/text_date_size"
+        app:layout_constraintEnd_toEndOf="@+id/et_first_date"
+        app:layout_constraintStart_toStartOf="@+id/et_first_date"
+        app:layout_constraintTop_toBottomOf="@+id/et_first_date" />
+
+    <EditText
+        android:id="@+id/et_second_date"
+        android:layout_width="@dimen/width_date"
+        android:layout_height="@dimen/height_date"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/et_shape"
+        android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:lineSpacingExtra="5sp"
+        android:padding="@dimen/text_size"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:textStyle="normal"
+        android:autofillHints="date"
+        app:layout_constraintEnd_toEndOf="@id/tv_enter_second"
+        app:layout_constraintStart_toStartOf="@id/tv_enter_second"
+        app:layout_constraintTop_toBottomOf="@id/tv_enter_second"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck"
+        android:inputType="date" />
+
+
+    <LinearLayout
+        android:id="@+id/l_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_second_date">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_after_days"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/after_day"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_num_days"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:gravity="center" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_after_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/after_week"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_num_week"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_after_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/after_month"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_num_month"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_after_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/after_year"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_num_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="@dimen/width"
+        android:layout_height="@dimen/height"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_shape"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/l_vertical"
+        app:layout_constraintStart_toStartOf="@+id/l_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/l_vertical" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
